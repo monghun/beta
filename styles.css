@@ -1,0 +1,60 @@
+body{
+  background-color: white;margin: 0 auto;
+  max-width: 800px;}
+.main-title{font-size: 5em;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+text-align: center;}
+  section {background-color: lavender;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 30px;font: serif;}
+    .intro {
+      border: 1px solid pink;
+      margin-bottom: 10px;
+      padding: 10px; /* overwrites the default padding for a section */
+      }
+      .intro {display: flex; /* this will get all child elements to be placed nicely in columns */
+      }
+  footer {
+border-top: 1px solid grey;
+  font: serif
+  +  font-size: 0.8em;
+  +  text-align: center;}
+  +
+  article {
+  +  background-color: white;
+  +  border-radius: 5px; /* will give rounded corners */
+  +  padding: 0 10px 0 10px;
+  +}
+  +
+  +h3 {
+  +  text-decoration: underline}
+  +
+
+  +
+  +.nav-links {
+  +  text-align: right;
+  +}
+  +.selected {
+  +  color: grey;
+  +}
+  +
+  +/* we can apply a set of styles to multiple selectors by seperating them with a comma */
+
+  +
+  +/* IDs are not considered best practice, but this is how you do it anyway */
+  +#main-title {
+  +  text-transform: uppercase;
+  +}
+  +
+  +/* more advanced selectors allow us to focus in on conent without needing to add additional classes */
+  +/* increase the font size of the first paragraph we find */
+  +p:first-of-type {
+  +  font-size: 1.25em;
+  +}
+  +
+  +/* add a cool hover effect to our links */
+  +a:hover {
+  +  color: red;
+  +}
